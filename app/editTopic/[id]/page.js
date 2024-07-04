@@ -12,9 +12,12 @@ export const generateMetadata = async ({ params }) => {
 
 const getData = async (id) => {
   try {
-    const res = await fetch(`${process.env.URL}/api/topics/${id}`, {
-      cache: "no-store",
-    });
+    const res = await fetch(
+      `https://post-description-nextjs.vercel.app/api/topics/${id}`,
+      {
+        cache: "no-store",
+      }
+    );
     if (!res.ok) {
       throw new Error("Failed to fetch topic");
     }

@@ -5,7 +5,7 @@ import { HiPencilAlt } from "react-icons/hi";
 const getTopics = async () => {
   console.log(process.env.URL);
   try {
-    const res = await fetch(`${process.env.URL}/api/topics`, {
+    const res = await fetch(`https://post-description-nextjs.vercel.app/api/topics`, {
       cache: "no-store",
     });
 
