@@ -3,8 +3,9 @@ import RemoveBtn from "./RemoveBtn";
 import { HiPencilAlt } from "react-icons/hi";
 
 const getTopics = async () => {
+  console.log(process.env.URL);
   try {
-    const res = await fetch("${process.env.URL}t-description-nextjs.vercel.app/api/topics", {
+    const res = await fetch(`${process.env.URL}/api/topics`, {
       cache: "no-store",
     });
 

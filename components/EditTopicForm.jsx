@@ -15,7 +15,7 @@ export default function EditTopicForm({ id, title, description }) {
     e.preventDefault();
 
     try {
-      const res = await fetch(`${process.env.URL}t-description-nextjs.vercel.app/api/topics/${id}`, {
+      const res = await fetch(`${process.env.URL}/api/topics/${id}`, {
         method: "PUT",
         headers: {
           "Content-type": "application/json",
