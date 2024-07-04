@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [https://post-description-nextjs.vercel.appt-description-nextjs.vercel.app](https://post-description-nextjs.vercel.appt-description-nextjs.vercel.app) with your browser to see the result.
+Open [${process.env.URL}t-description-nextjs.vercel.app](${process.env.URL}t-description-nextjs.vercel.app) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 

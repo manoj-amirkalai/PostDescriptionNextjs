@@ -18,7 +18,7 @@ export default function AddTopic() {
     }
 
     try {
-      const res = await fetch(`https://post-description-nextjs.vercel.app/api/topics`, {
+      const res = await fetch(`${process.env.URL}/api/topics`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",
